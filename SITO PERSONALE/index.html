@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberto Molon | Frontend Developer</title>
+  <meta
+    name="description"
+    content="Portfolio di Alberto Molon: frontend development, UI design, formazione, progetti e contatti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="brand" href="#home">
+        <span class="brand-mark">
+          <img src="img/img-volto.png" alt="Icona volto di Alberto Molon">
+        </span>
+        <span class="brand-text">Alberto Molon</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="nav-panel">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#chi-sono" class="nav-link">Profilo</a>
+        <a href="#formazione" class="nav-link">Formazione</a>
+        <a href="#progetti" class="nav-link">Progetti</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+        <a href="CV-NUOVO.pdf" class="nav-cta" download>Scarica CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="floating-assistant" id="floating-assistant" aria-hidden="true">
+    <div class="floating-assistant-shadow"></div>
+    <div class="floating-assistant-face">
+      <img src="img/img-volto.png" alt="">
+    </div>
+  </div>
+
+  <main>
+    <section class="hero section-dark" id="home">
+      <div class="hero-aurora hero-aurora-left" data-parallax="18" aria-hidden="true"></div>
+      <div class="hero-aurora hero-aurora-right" data-parallax="26" aria-hidden="true"></div>
+      <div class="hero-spotlight" aria-hidden="true"></div>
+
+      <div class="section-shell hero-shell hero-shell-reference" data-reveal>
+        <div class="hero-reference-top">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="hero-reference-grid">
+          <div class="hero-reference-copy">
+            <p>
+              Frontend developer appassionato di interfacce forti,
+              dettagli curati e progetti dal carattere più memorabile.
+            </p>
+          </div>
+
+          <div class="hero-reference-title-wrap">
+            <h1 class="hero-title hero-title-reference">HI, I'M ALBERTO</h1>
+
+            <div class="hero-portrait hero-portrait-reference">
+              <div class="hero-portrait-shadow" aria-hidden="true"></div>
+              <div class="hero-portrait-frame" data-parallax="12">
+                <img src="img/img-volto.png" alt="Avatar stilizzato di Alberto Molon">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-reference-action">
+            <a href="#contatti" class="button button-primary hero-contact-button">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-dark-alt" id="chi-sono">
+      <div class="section-shell">
+        <div class="section-heading about-heading" data-reveal>
+          <h2>Chi Sono</h2>
+        </div>
+
+        <div class="about-single" data-reveal>
+          <p class="about-story">
+            Sono uno <strong>sviluppatore frontend</strong> con una forte passione per <strong>UX e UI</strong>.
+            Dopo il diploma in Grafica e Comunicazione, sto approfondendo le mie competenze presso l'<strong>ITS Academy LAST</strong>
+            per diventare un web developer sempre più completo.
+          </p>
+          <p class="about-story">
+            Cerco <strong>esperienze lavorative significative, anche tramite stage</strong>, per mettere in pratica competenze tecniche
+            e sensibilità visiva dentro progetti concreti.
+          </p>
+          <p class="about-tech-list">
+            Tecnologie che so usare: HTML5, CSS3, JavaScript, React, Figma, Adobe CC, GitHub, WordPress.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section-light" id="formazione">
+      <div class="section-shell">
+        <div class="section-heading section-heading-dark" data-reveal>
+          <p class="eyebrow">Formazione</p>
+          <h2>Il mio percorso di formazione</h2>
+          <p>
+            Ho mantenuto i tuoi anni e le informazioni già presenti nel sito, ma li ho trasformati in una sezione più forte e ordinata, vicina alle reference.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">01<span>2018-2021</span></div>
+            <div class="timeline-content">
+              <h3>CFP Salesiani Grafica e Comunicazione</h3>
+              <p>Via Don Giovanni Minzoni, Verona</p>
+              <ul>
+                <li>Qualifica Grafico</li>
+                <li>Stage presso Promoline srl</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">02<span>2021-2024</span></div>
+            <div class="timeline-content">
+              <h3>ITT Salesiani Grafica e Comunicazione</h3>
+              <p>Via Don Giovanni Minzoni, Verona</p>
+              <ul>
+                <li>Qualifica Graphic Designer</li>
+                <li>Stage presso Grafiche AZ - Legapress</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">03<span>2024-2026</span></div>
+            <div class="timeline-content">
+              <h3>ITS Academy LAST</h3>
+              <p>Lungadige Galtarossa, Verona</p>
+              <ul>
+                <li>Diploma di Tecnico Superiore Web Developer</li>
+                <li>Primo stage presso Ewake</li>
+                <li>Secondo stage presso Intesys S.r.l.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-year">04<span>2026-...</span></div>
+            <div class="timeline-content">
+              <h3>In svolgimento</h3>
+              <p>Sto costruendo il prossimo step professionale con l'obiettivo di entrare in progetti reali e continuare a crescere sul campo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-dark" id="progetti">
+      <div class="section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Progetti</p>
+          <h2>Progetti personali e realizzati in stage</h2>
+          <p>
+            Anteprima di alcuni dei miei lavori svolti durante il mio percorso di Web Develper e UI/UX Designer
+          </p>
+        </div>
+
+        <div class="projects-stack">
+          <article class="project-card" data-card data-reveal style="--sticky-top: 96px; --sticky-top-mobile: 90px;">
+            <div class="project-header">
+              <div class="project-index">01</div>
+              <div class="project-summary">
+                <span>Cliente reale</span>
+                <h3>Scaligera Marmi</h3>
+                <p>HTML5 / CSS3 / JavaScript / Bootstrap</p>
+              </div>
+              <a href="#contatti" class="project-action">contattami</a>
+            </div>
+
+            <div class="project-gallery">
+              <div class="project-main">
+                <img src="img/lavoro_scaligera.png" alt="Anteprima progetto Scaligera Marmi">
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-card data-reveal style="--sticky-top: 122px; --sticky-top-mobile: 106px;">
+            <div class="project-header">
+              <div class="project-index">02</div>
+              <div class="project-summary">
+                <span>Restyling</span>
+                <h3>EWAKE</h3>
+                <p>HTML5 / CSS3 / JavaScript / Bootstrap</p>
+              </div>
+              <a href="#contatti" class="project-action">contattami</a>
+            </div>
+
+            <div class="project-gallery">
+              <div class="project-main">
+                <img src="img/lavoro_ewake.png" alt="Anteprima progetto Ewake">
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-card data-reveal style="--sticky-top: 148px; --sticky-top-mobile: 122px;">
+            <div class="project-header">
+              <div class="project-index">03</div>
+              <div class="project-summary">
+                <span>Home page</span>
+                <h3>Dr. Soldati</h3>
+                <p>HTML5 / CSS3 / JavaScript / Bootstrap</p>
+              </div>
+              <a href="#contatti" class="project-action">contattami</a>
+            </div>
+
+            <div class="project-gallery">
+              <div class="project-main">
+                <img src="img/lavoro_soldati.png" alt="Anteprima progetto Dr. Soldati">
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-card data-reveal style="--sticky-top: 174px; --sticky-top-mobile: 138px;">
+            <div class="project-header">
+              <div class="project-index">04</div>
+              <div class="project-summary">
+                <span>One page</span>
+                <h3>Schar</h3>
+                <p>HTML5 / CSS3 / JavaScript / Bootstrap</p>
+              </div>
+              <a href="#contatti" class="project-action">contattami</a>
+            </div>
+
+            <div class="project-gallery">
+              <div class="project-main">
+                <img src="img/lavoro_schar.png" alt="Anteprima progetto Schar">
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-card data-reveal style="--sticky-top: 200px; --sticky-top-mobile: 154px;">
+            <div class="project-header">
+              <div class="project-index">05</div>
+              <div class="project-summary">
+                <span>APP</span>
+                <h3>GreenEarth</h3>
+                <p>Figma</p>
+              </div>
+              <a href="#contatti" class="project-action">contattami</a>
+            </div>
+
+            <div class="project-gallery">
+              <div class="project-main">
+                <img src="img/progetto5.png" alt="Anteprima progetto 5">
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card-static" data-reveal>
+            <div class="project-header">
+              <div class="project-index">06</div>
+              <div class="project-summary">
+                <span>Sito Web</span>
+                <h3>Ferrari</h3>
+                <p>Figma</p>
+              </div>
+              <a href="#contatti" class="project-action">contattami</a>
+            </div>
+
+            <div class="project-gallery">
+              <div class="project-main">
+                <img src="img/progetto6.png" alt="Anteprima progetto 6">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-light" id="contatti">
+      <div class="section-shell contact-shell">
+        <div class="contact-copy" data-reveal>
+          <p class="eyebrow">Contatti</p>
+          <h2>Let's get in touch.</h2>
+          <a class="contact-mail" href="mailto:albertomolon4@gmail.com">albertomolon4@gmail.com</a>
+          <p>
+            Se vuoi contattarmi per uno stage, una collaborazione o un restyling, lasciami un messaggio qui.
+          </p>
+
+          <div class="contact-points">
+            <span><i class="fa-solid fa-location-dot"></i> Verona, Italia</span>
+            <span><i class="fa-solid fa-file-arrow-down"></i> CV scaricabile dalla navbar</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" data-reveal>
+          <label>
+            Nome completo
+            <input type="text" name="name" placeholder="Il tuo nome" required>
+          </label>
+
+          <div class="form-row">
+            <label style="margin-top: 17px;">
+              Email
+              <input type="email" name="email" placeholder="nome@email.com" required>
+            </label>
+
+            <label>
+              Telefono
+              <input type="tel" name="phone" placeholder="+39">
+            </label>
+          </div>
+
+          <label style="margin-top: 30px;">
+            Messaggio
+            <textarea name="message" rows="5" placeholder="Raccontami il progetto o la richiesta" required></textarea>
+          </label>
+
+          <button type="submit" class="button button-primary button-full">Invia richiesta</button>
+          <p class="form-note" id="form-note">Il form apre una mail pronta da inviare al mio indirizzo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div class="footer-brand-block" data-reveal>
+          <p class="footer-kicker">Frontend Developer • UI / UX</p>
+        <h2 class="footer-name">
+          <span>A</span><span>L</span><span>B</span><span>E</span><span>R</span><span>T</span><span>O</span>
+          <br>
+          <span>M</span><span>O</span><span>L</span><span>O</span><span>N</span>
+        </h2>
+        <p class="footer-caption">Disponibile per stage, collaborazioni e nuovi progetti.</p>
+      </div>
+
+      <div class="footer-links-block" data-reveal>
+        <div class="footer-column">
+          <span class="footer-title">Explore</span>
+          <a href="#home">Home</a>
+          <a href="#chi-sono">Chi Sono</a>
+          <a href="#progetti">Progetti</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+
+        <div class="footer-column">
+          <span class="footer-title">Contact</span>
+          <a href="mailto:albertomolon4@gmail.com">albertomolon4@gmail.com</a>
+          <span>Verona, Italia</span>
+          <a href="CV-NUOVO.pdf" download>Scarica CV</a>
+          <span>© 2026 Alberto Molon</span>
+        </div>
+      </div>
+
+      <div class="footer-art" aria-hidden="true">
+        <span class="footer-shape" style="--shape-color: #f4efe7;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M36 14c8 0 14 6 14 14v8h8c8 0 14 6 14 14s-6 14-14 14h-8v8c0 8-6 14-14 14s-14-6-14-14v-8h-8c-8 0-14-6-14-14s6-14 14-14h8v-8c0-8 6-14 14-14Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #ff5fd2;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="31" cy="31" r="18"/>
+            <circle cx="69" cy="31" r="18"/>
+            <circle cx="31" cy="69" r="18"/>
+            <circle cx="69" cy="69" r="18"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #edf4ff;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path fill-rule="evenodd" d="M73 50c0 16.02-12.98 29-29 29S15 66.02 15 50s12.98-29 29-29c1.94 0 3.84.19 5.67.56C37.83 25.84 29 36.93 29 50s8.83 24.16 20.67 28.44A29.13 29.13 0 0 1 44 79c16.02 0 29-12.98 29-29Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #8c63ff;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="33"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #eef7ff;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M6 50 42 18v20h52v24H42v20Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #ffbe42;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M14 50c0-21 15-36 36-36v72c-21 0-36-15-36-36Zm72 0c0 21-15 36-36 36V14c21 0 36 15 36 36Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #eef7ff;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 14 86 50H64v36H36V50H14Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #ff5fd2;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path fill-rule="evenodd" d="M50 16c18.78 0 34 15.22 34 34S68.78 84 50 84 16 68.78 16 50 31.22 16 50 16Zm0 18c-8.84 0-16 7.16-16 16s7.16 16 16 16 16-7.16 16-16-7.16-16-16-16Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #f3c8a7;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 12c19 15 30 31 30 48 0 16.57-13.43 30-30 30S20 76.57 20 60c0-17 11-33 30-48Z"/>
+          </svg>
+        </span>
+        <span class="footer-shape" style="--shape-color: #f0e6d7;">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M14 60 40 14h20l26 46-16 26H30Z"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
