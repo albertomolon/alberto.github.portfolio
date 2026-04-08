@@ -44,6 +44,7 @@
 
   <div class="floating-assistant" id="floating-assistant" aria-hidden="true">
     <div class="floating-assistant-shadow"></div>
+    <div class="assistant-bubble" id="assistant-bubble" aria-live="polite"></div>
     <div class="floating-assistant-face">
       <img src="img/img-volto.png" alt="">
     </div>
@@ -315,17 +316,10 @@
             <input type="text" name="name" placeholder="Il tuo nome" required>
           </label>
 
-          <div class="form-row">
-            <label style="margin-top: 17px;">
-              Email
-              <input type="email" name="email" placeholder="nome@email.com" required>
-            </label>
-
-            <label>
-              Telefono
-              <input type="tel" name="phone" placeholder="+39">
-            </label>
-          </div>
+          <label style="margin-top: 17px;">
+            Email
+            <input type="email" name="email" placeholder="nome@email.com" required>
+          </label>
 
           <label style="margin-top: 30px;">
             Messaggio
