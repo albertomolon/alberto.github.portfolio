@@ -8,6 +8,8 @@
   <meta
     name="description"
     content="Portfolio di Alberto Molon: frontend development, UI design, formazione, progetti e contatti.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self'; form-action 'self' mailto:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -317,7 +319,12 @@
         <div class="contact-copy" data-reveal>
           <p class="eyebrow">Contatti</p>
           <h2>Let's get in touch.</h2>
-          <a class="contact-mail" href="mailto:albertomolon4@gmail.com">albertomolon4@gmail.com</a>
+          <a
+            class="contact-mail protected-email"
+            href="#contatti"
+            data-user="albertomolon4"
+            data-domain="gmail.com"
+            data-label="Scrivimi via email">Scrivimi via email</a>
           <p>
             Se vuoi contattarmi per uno stage, una collaborazione o un restyling, lasciami un messaggio qui.
           </p>
@@ -331,21 +338,60 @@
         <form class="contact-form" id="contact-form" data-reveal>
           <label>
             Nome completo
-            <input type="text" name="name" placeholder="Il tuo nome" required>
+            <input
+              type="text"
+              name="name"
+              placeholder="Il tuo nome"
+              autocomplete="name"
+              minlength="2"
+              maxlength="80"
+              required>
           </label>
 
           <label style="margin-top: 17px;">
             Email
-            <input type="email" name="email" placeholder="nome@email.com" required>
+            <input
+              type="email"
+              name="email"
+              placeholder="nome@email.com"
+              autocomplete="email"
+              inputmode="email"
+              autocapitalize="off"
+              spellcheck="false"
+              maxlength="160"
+              required>
           </label>
 
           <label style="margin-top: 30px;">
             Messaggio
-            <textarea name="message" rows="5" placeholder="Raccontami il progetto o la richiesta" required></textarea>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Raccontami il progetto o la richiesta"
+              minlength="20"
+              maxlength="1500"
+              autocomplete="off"
+              required></textarea>
+          </label>
+
+          <div class="contact-honeypot" aria-hidden="true">
+            <label for="contact-website">Sito web</label>
+            <input
+              id="contact-website"
+              type="text"
+              name="website"
+              tabindex="-1"
+              autocomplete="off">
+          </div>
+
+          <label class="consent-check">
+            <input type="checkbox" name="privacy-consent" required>
+            <span>Confermo di aver letto l'<a href="privacy.html">informativa privacy</a> e autorizzo il trattamento dei dati inviati per ricevere una risposta.</span>
           </label>
 
           <button type="submit" class="button button-primary button-full">Invia richiesta</button>
-          <p class="form-note" id="form-note">Il form apre una mail pronta da inviare al mio indirizzo.</p>
+          <p class="form-note" id="form-note">Il form prepara una mail sul tuo dispositivo. Non inserire dati sanitari, documenti, password o altri dati molto sensibili.</p>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -374,9 +420,15 @@
 
         <div class="footer-column">
           <span class="footer-title">Contact</span>
-          <a href="mailto:albertomolon4@gmail.com">albertomolon4@gmail.com</a>
+          <a
+            class="protected-email"
+            href="#contatti"
+            data-user="albertomolon4"
+            data-domain="gmail.com"
+            data-label="Email diretta">Email diretta</a>
           <span>Verona, Italia</span>
           <a href="CV-NUOVO.pdf" download>Scarica CV</a>
+          <a href="privacy.html">Privacy</a>
           <span>© 2026 Alberto Molon</span>
         </div>
       </div>
