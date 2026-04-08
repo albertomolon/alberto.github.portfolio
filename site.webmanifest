@@ -1,0 +1,24 @@
+{
+  "name": "Alberto Molon",
+  "short_name": "Alberto Molon",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#120d09",
+  "background_color": "#120d09",
+  "display": "standalone"
+}
