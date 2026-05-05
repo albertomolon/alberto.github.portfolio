@@ -78,6 +78,48 @@
       <img src="img/img-volto.png" alt="">
     </div>
   </div>
+  <div class="assistant-game" id="assistant-game">
+    <button
+      type="button"
+      class="assistant-coin-wallet"
+      id="assistant-wallet-toggle"
+      aria-live="polite"
+      aria-expanded="false"
+      aria-controls="assistant-shop">
+      <span class="assistant-coin-icon" aria-hidden="true"><i class="fa-solid fa-coins"></i></span>
+      <span class="assistant-coin-label">Monete</span>
+      <strong id="assistant-coin-count">0</strong>
+    </button>
+
+    <div class="assistant-shop" id="assistant-shop" aria-label="Negozio oggetti">
+      <button type="button" class="assistant-shop-item" data-effect-buy="fireworks" data-price="12">
+        <span class="assistant-shop-name">Fuochi</span>
+        <span class="assistant-shop-price"><i class="fa-solid fa-coins" aria-hidden="true"></i> 12</span>
+      </button>
+      <button type="button" class="assistant-shop-item" data-effect-buy="hearts" data-price="6">
+        <span class="assistant-shop-name">Cuori</span>
+        <span class="assistant-shop-price"><i class="fa-solid fa-coins" aria-hidden="true"></i> 6</span>
+      </button>
+      <button type="button" class="assistant-shop-item" data-effect-buy="stars" data-price="5">
+        <span class="assistant-shop-name">Stelle</span>
+        <span class="assistant-shop-price"><i class="fa-solid fa-coins" aria-hidden="true"></i> 5</span>
+      </button>
+      <button type="button" class="assistant-shop-item" data-effect-buy="thumbs" data-price="7">
+        <span class="assistant-shop-name">Pollici</span>
+        <span class="assistant-shop-price"><i class="fa-solid fa-coins" aria-hidden="true"></i> 7</span>
+      </button>
+      <button type="button" class="assistant-shop-item" data-effect-buy="icons" data-price="8">
+        <span class="assistant-shop-name">Icone</span>
+        <span class="assistant-shop-price"><i class="fa-solid fa-coins" aria-hidden="true"></i> 8</span>
+      </button>
+      <button type="button" class="assistant-shop-item" data-effect-buy="faces" data-price="4">
+        <span class="assistant-shop-name">Faccine</span>
+        <span class="assistant-shop-price"><i class="fa-solid fa-coins" aria-hidden="true"></i> 4</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="assistant-effect-layer" id="assistant-effect-layer" aria-hidden="true"></div>
 
   <main>
     <section class="hero section-dark" id="home">
